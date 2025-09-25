@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>class selectors</title>
+        <style>
+            div{
+                background-color: cornflowerblue; color: white;
+                padding: 25px;
+                text-align: center;
+            }
+            div:hover{
+                background-color: blue;
+            }
+            #para{
+                font-size: 18px;
+            }
+            #para::before{
+                content: "- before -"; background-color: green;
+            }
+            #para::after{
+                content:  "- after -"; background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div>place the mouse over here to change the color.</div>
+    </body>
+</html>

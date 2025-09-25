@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        h1{
+            background-color: blueviolet;
+            background-color: darkblue;
+        }
+        div#a{background-color: yellow;}
+        #a
+        {
+            background-color: blue;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <h1> this is a man </h1>
+    <!--if the rule is written twice the lower rule will be applied-->
+    <div id="a">this is a line.</div>
+    <!--id selectors have higher specificity than attribute selectors-->
+    <!--#content h1 (back- ground- color; blue;) {for css file}-->
+    <!--<style> #content h1 {background color: red;} <style> [for html files]-->
+        <!--
+        div[id=a] (back- ground- color: red;)-->
+</body>
+</html>

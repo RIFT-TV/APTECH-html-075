@@ -1,0 +1,36 @@
+body{
+    font: normal;
+    color: #555;
+    background: #f6f6f6;
+    width: 100%;
+}
+header{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #f6f6f6;
+}
+img-logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+}
+nav{
+width: 400px;
+margin-right: 300px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul il{
+    padding: 5px;
+}
+nav ul il a{
+    font-size: 15px;
+    color: white;
+}
+nav ul il a:hover{
+    background-color: green;
+}
