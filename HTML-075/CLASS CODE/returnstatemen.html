@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        functionfactorial(num){
+            if(num==0)
+            return 0;
+        elseif(num==1)
+        return1;
+    else{
+        var result=num;
+        while(num>1)
+    {
+        result = result * (num-1);
+        num--;
+    }
+    return result;
+    }
+        }
+        varnum=prompt('Enternumber:', '');
+        var result = factorial(num);
+        alert('factorialof' +num+ 'is' +result+ '.');
+    </script>
+</body>
+</html>

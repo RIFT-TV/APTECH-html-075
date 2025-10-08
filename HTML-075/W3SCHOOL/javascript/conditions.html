@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions</title>
+</head>
+<body>
+    <p id="no">evening</p>
+    <script>
+        if(new Date().getHours() < 18){
+            document.getElementById("no").innerHTML = "morning";
+        }
+    </script><br>
+    <p id="on"></p>
+    
+    <script>
+        let age= 45;
+        let text= "you not can drive";
+if(age>=18){
+    text="you can drive";
+    document.getElementById("on").innerHTML = "text";
+
+}
+    </script>
+</body>
+</html>

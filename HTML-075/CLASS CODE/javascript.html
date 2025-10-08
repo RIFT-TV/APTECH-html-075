@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>section11a</title>
+        <script>
+            document.write("welcome to digital world");
+            </script>
+    </head>
+    <body>
+        <script>
+            alert("HOW ARE YOU JAVASCRIPT")
+        </script>
+        <p id="test"></p>
+        <br>
+        <p id="test2">first statement</p>
+        <br>
+        <p id="test3"></p>
+        <p id="test4"></p>
+        <p id="test5"></p>
+        <p id="test6"></p>
+        <p id="test7"></p>
+        <p id="test8"></p>
+        <br>
+        <script>
+            document.getElementByid("test").innerHTML = "welcome to aptech";
+            function myfun(){
+                document.getElementByid("test2").innerHTML = "second statement"
+            }
+            function add(){
+                a = 10;
+                b = 20;
+                //return c = a+b;
+                document.getElementByid("test3").innerHTML = (c = a + b);
+            }
+            let firstnum =prompt("enter first number")
+            let secondnum =prompt("enter the second number")
+            add = firstnum+secondnum;
+            div = firstnum/secondnum;
+            mul = firstnum*secondnum;
+            sub= firstnum-secondnum;
+            mod= firstnum%secondnum;
+            function result(){
+                document.getElementByid("test4").innerHTML=add1;
+                document.getElementByid("test5").innerHTML=div1;
+                document.getElementByid("test6").innerHTML=mul1;
+                document.getElementByid("test7").innerHTML=sub1;
+                document.getElementByid("test8").innerHTML=mod1;
+
+            }
+        </script>
+        <button onclick="result()">printresult</button>"
+        <button onclick="add()">add</button>
+        <br>
+        <button onclick="myfun()">click to change a value</button>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<script>
+  // Wait until document is ready
+  $(document).ready(function () {
+
+    // 1. Change text using .text()
+    $("#changeText").click(function () {
+      $("#text").text("The text has been changed!");
+    });
+
+    // 2. Toggle element visibility using .toggle()
+    $("#toggleBox").click(function () {
+      $("#box").toggle();
+    });
+
+    // 3. Add a class using .addClass()
+    $("#addClass").click(function () {
+      $("#text").addClass("highlight");
+    });
+
+    // 4. Fade effect using .fadeOut()
+    $("#fadeOutBox").click(function () {
+      $("#box").fadeOut(1000, function () {
+        alert("Box faded out.");
+      });
+    });
+
+    // 5. Slide effect using .slideToggle()
+    $("#slideBox").click(function () {
+      $("#box").slideToggle();
+    });
+
+    // 6. Change attribute using .attr()
+    $("#attrButton").click(function () {
+      $("#myLink")
+        .attr("href", "https://www.google.com")
+        .text("Go to Google");
+    });
+
+    // 7. Chaining methods
+    $("#text").css("color", "blue").slideDown().fadeIn();
+
+  });
+</script>
+
+
+
+
+
+
+

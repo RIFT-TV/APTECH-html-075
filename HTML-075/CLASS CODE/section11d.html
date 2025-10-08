@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event and event handling</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>javascript event and event handling</h2>
+    <!--HTML event attribute-->
+    <button onclick="htmlevent()">click me</button>
+
+    <!--Using add eventlistener-->
+    <button id="jseventbtn">click me (addeventlistener)</button>
+
+    <!--mouse events-->
+    <div class="box" id="hoverbox"> hover  over me</div>
+
+    <!--keyboard event-->
+    <input type="text" id="keyinput" placeholder="type something.."/>
+
+    <!--focus and blur events-->
+    <input type="text" id="focusinput" placeholder="focus on me"/>
+
+    <script>
+        const output = document.getElementById("output");
+
+        //1. HTML event attribute handler
+        function htmlEvent(){
+            output innerHTML +="<p>you clicked the button using HTML attribute </p>"
+        }
+
+        //2. using addEventListener
+        document.getElementById("jsEventBin")addEventlistener("click".functoin(){
+            output innerHTML +="<p> you clicked the button using addEventListener</p>";
+
+        });
+
+        //3. Mouseover and mouseout
+        const box = document.getElementById("hoverbox");
+        box addEventListener("mouseover"; function(){
+            box style backgroundgroundcolor = "orange";
+            output innerHTML += "<p>mouse left the box </p>"
+        });
+
+        //4. keyboard event(keyup)
+        document.getElementById("keyinput")addEventListener("keyup"; function (event){
+            output innerHTML += '<p> you pressed key; $(event key)</p>';
+
+        });
+//5. focus and blur events
+const focusinput=document.getElementById("focusinput");
+
+focusinput.addEventlistener("focus", function(){
+    focusinputstyleborder="1px solid #ccc",
+    outputinnerHTML +="<p>input blurred</p>"
+});
+    </script>
+</body>
+</html>

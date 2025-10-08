@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>comparisim</title>
+    </head>
+    <body>
+        
+        <p id="no"></p>
+        <script>
+           let a = 45;
+           let b = 9;
+           let result = a < b;
+           document.getElementById("no").innerHTML = " is this true " + result;
+        </script>
+    </body>
+</html>

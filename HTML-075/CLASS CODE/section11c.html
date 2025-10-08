@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types</title>
+</head>
+<body>
+    <h1>variables and datatypes
+    </h1>
+<script>
+
+    //string
+
+    let name="alice";
+
+    //number (interger and float
+
+
+    let age = 25;
+    let height = 5.7;
+
+    //boolean
+    let isstudent = true;
+    
+    //null
+    let emptyvalue = null;
+
+    //undefined
+    let noAssigned
+
+    //object
+    let person = (
+        firstname:"john"
+        lastname:"Doe"
+        age:30
+    );
+    //Array (object type too)
+    let fruits = ["apple", "banana", "mango"];
+
+    //symbol (unique and imutable)
+    let id = symbol("uniqued");
+    
+    //Bright (for very large integers)
+    let bignumber = 1234567812345678123456123456312345123451235;
+
+    //function (also a type of object)
+    function greet() {
+        return "hello";
+    }
+
+    //Display all variable values and types
+    console.log("Name "name, "type", typeof name);
+    console.log("height:" height, "type:",typeofage);
+    console.log("is student:", isstudent, "type:", typeof isstudent);
+    console.log("empty value;",emptyvalue, "type:", typeof emptyvalue);
+    //object (special case)
+    console.log("not Assigned:", notAssign, "types:", typeof notAssign);
+    console.log("person object;", person, "type",typeof person);
+    console.log("fruits Array:", fruits, "TYPES:", typeof fruits);//object
+</script>
+</body>
+</html>
