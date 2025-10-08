@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #canvas{
+            border: 1px solid red;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var canvas= document.getElementById("canvas");
+            var ctext = canvas.getctext("2d");
+            ctext.beginpath();
+            ctext.moveto(100,150);
+            ctext.lineTo(250,50);
+            ctext.linewidth=5;
+            ctext.strokestype="blue";
+            ctext.stroke();
+        }
+    </script>
+</head>
+<body>
+    <canvas id="canvas" height="200" width="278"></canvas>
+</body>
+</html>
