@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drag and drop api</title>
+    <script>
+        function drag_image(event)
+        {
+            event.datatransfer.setData("image", event.target.id);
+        }
+    </script>
+</head>
+<body>
+    <div id="div1" style="border: blue 2px solid; height: 125px;
+    width: 75px; padding: 10px;">
+    <img src="/VIDEO PROJECT/largest flower.png" height="75" width="75" id="image1" draggable="true" ondragstart="drag_image(event)"/>
+</div>
+</body>
+</html>

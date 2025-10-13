@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            padding: 10%;
+        }
+        #map-canvas{
+            height: 50%;
+            width: 50%;
+        }
+            </style>
+            <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+            <script>
+                // check support for geolocation in the browser
+                if (navigator.geolocation){
+                    //locate position and invoke function
+                    navigator.geolocation.getCurrentPosition(displayposition, errorfunction);
+                }
+                else{
+                    alert('geolocation is not enabled in your browser');
+                }
+                //creates the map object
+                var map = new
+                google.maps.map(document.getElementById("map_canvas"), myOptions);
+                //Displays icon on the located position
+                var marker = new google.maps.Marker((
+                    position: lating,
+        
+                    map: map,
+                    title:"user location"
+                ));
+            
+            //Error callback function
+            function errorfunction(pos) (
+                alert('error!');
+            )
+            </script>
+</head>
+<body>
+    <div id="map_canvas"></div>
+    <div id="user_location"></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #mCanvas{
+            border: 1px solid chartreuse;
+        }
+    </style>
+    <script>
+        window.onload = functin() {
+            var canvas = document.getElementById("mCanvas");
+            var ctext = canvas.getcontext("2d");
+            var imgObj = new Image{};
+            imgObj.onload = function()
+            {
+            ctext.drawImage(imgObj, 69, 50);
+            };
+            imgObj.src = "C:\Users\user\Desktop\APTECH-html-075\HTML-075\VIDEO PROJECT\off light bulb.png"
+        };
+          
+    </script>
+</head>
+<body>
+    <canvas id="mCanvas" height="200" width="378"></canvas>
+    
+</body>
+</html>
+

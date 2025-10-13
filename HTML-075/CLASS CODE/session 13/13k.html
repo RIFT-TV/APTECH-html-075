@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #mCanvas{
+            border: 1px solid chartreuse;
+        }
+    </style>
+    <script>
+        window.onload = functin() {
+            var canvas = document.getElementById("mCanvas");
+            var ctext = canvas.getcontext("2d");
+            var x = 80;
+            var y = 110;
+            ctext.linewidth = 2;
+            //stroke color
+            ctext.strokestyle = "brown";
+            ctext.strokeText("HTML5", x, y);
+        };
+          
+    </script>
+</head>
+<body>
+    <canvas id="mCanvas" height="200" width="378"></canvas>
+    
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+
+var employee Data = [
+{ name: "John Smith", email: "john@company.com"}
+{ name: "Jill Patrick", email: "jill@company.com"},
+{ name: "Rock Ethan", email: "rock@company.com"},
+{ name: "Daniel Andrew", email: "daniel@company.com"}
+];
+var objectStore
+=
+db.createObjectStore ("employee", {
+keyPath: "id", auto Increment: true });
+for (i in employeeData)
+objectStore.put (employeeData[i]);
+alert("Record added");

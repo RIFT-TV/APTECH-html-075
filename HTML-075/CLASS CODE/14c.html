@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>handling error</title>
+    <script>
+        function get.location() {
+            alert ('latitude: ' + position.coors.latitude + '/n' + 'longitude: ' + position.coords.longitude);
+
+        }
+        function errorhandler(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    alert ('you have denied access to your position.');
+                    break;
+                    case error.TIMEOUT:
+                        alert{'the application has timed out attempting to get your position.'};
+                        break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="display location" onclick="getlocation()"/>
+</body>
+</html>

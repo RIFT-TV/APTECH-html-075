@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var options = {
+            enableHighAccuracy:  true,
+            maximumAge: 60000
+        };
+        functiongetLocation(){
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentposition(showposition,
+                    errorHandler, options
+                );
+            }
+        else{
+            alert ("geolocation is not supported in this browser.");
+        }
+        }
+        ...
+    </script>
+</body>
+</html>                                                                                                                     

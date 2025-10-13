@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Working with Session Storage</title>
+    <script>
+        function testStorage() {
+            if (('sessionStorage' in window) && window['sessionStorage'] !== null) {
+                sessionStorage.setItem('name', 'Sarah');
+                alert('The name is: ' + sessionStorage.getItem('name'));
+            }
+        }
+    </script>
+</head>
+<body onload="testStorage()">
+</body>
+</html>
