@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.nav{
+    color: rgb(0, 255, 0);
+    text-align: center;
+    padding: 30px;
+    margin-left: 300px;
+}
+
+div a:hover{
+    color: purple;
+}
+.header{
+    border: 20px none red;
+    display: flex;
+    position: sticky;
+    
+}
+.header img{
+    height: 100px;
+    width: 150px;
+    padding-left: 90px;
+}
+.section1{
+    background-color: blue;
+    opacity: 0.9;
+   border: 1px solid blue;
+   color: white;
+}
+.section2{
+    padding-left: 70px;
+    color: skyblue;
+    padding-bottom: 20px;  
+    border-bottom: 2px solid red;
+   
+}
+.div1 a{
+    margin-top: 0px;
+    margin-right:  700px;
+    margin-bottom: 0px;
+    margin-left: 90px;
+    border-left: 20px ;
+    border-right: 560px;
+    border: 3px solid rgb(13, 146, 255);
+    background-color:  rgb(13, 146, 255);
+    text-decoration: none;
+    border-radius: 9px;
+}
+p1{
+   border-bottom-color: red;
+    border-bottom: 3px;
+}
+.main1{
+   display: flex;
+   padding-top: 25px;
+   padding-right: 30px;
+}
+.section3{
+    margin-left: 150px;
+    border: 12px solid skyblue;
+    border-radius: 12px;
+    background-color: skyblue;
+    width: 40%;
+}
+.bod{
+    margin-left: 150px;
+    border: 12px solid skyblue;
+    border-radius: 12px;
+    background-color: skyblue;
+    width: 40%;
+}
+.main2{
+    background-color: blue;
+    color: white;
+}
+.main2 a{
+    color: white;
+    background-color: rgb(55, 118, 139);
+    width: auto;
+    text-decoration: none;
+    margin-left: 75px ;
+    padding:1.5px 9px ;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+.us{
+    font-size: 45px;
+    margin-right: 800px;
+}
+.contact{
+    background-color: rgb(73, 73, 251);
+    color: white;
+    padding: 50px 90px 0px 80px;
+}
+.cs{
+text-decoration: none;
+background-color: rgb(94, 94, 204);
+color: white;
+}
+.cs :hover{
+    background-color: rgb(60, 56, 56);
+    color: white;
+}
+footer{
+    padding: 50px;
+}

@@ -1,0 +1,14 @@
+.three {
+    background-color: red;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;               /* box width */
+   /* margin-left pushes it from the left side */
+    font-size: 18px;
+    box-shadow: 0 0 10px red;
+            /* aligns text to the left */
+  }
+  
+  
